@@ -24,14 +24,14 @@ let isAdult = confirm("Have you reached the age of majority?");
 console.log(isAdult);
 
 // Task 6
-let firstNae = "Lana";
-let lastName = "Hurkusha";
+let firstName1 = "Lana";
+let lastName1 = "Hurkusha";
 let studyGroup = 6;
 let yearOfBirth = 1984;
 let matitalStatus = false;
 
-console.log(typeof firstNae);
-console.log(typeof lastName);
+console.log(typeof firstName1);
+console.log(typeof lastName1);
 console.log(typeof studyGroup);
 console.log(typeof yearOfBirth);
 console.log(typeof matitalStatus);
