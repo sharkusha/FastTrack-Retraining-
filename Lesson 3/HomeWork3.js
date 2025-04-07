@@ -82,3 +82,29 @@ function findMin(...newArray) {
 function findUnique(arr) {
     return arr.length === new Set(arr).size;
 }
+
+// Task 7
+
+function showLastElement(newArr, numberOfElements){
+    if (numberOfElements === undefined) {
+        return newArr[newArr.length - 1];
+    } else {
+        return newArr.slice(-numberOfElements);
+    }
+}
+console.log(showLastElement([ 3 , 4 , 10, - 5 ]));
+console.log(showLastElement([ 3 , 4 , 10, - 5 ], 2 ));
+console.log(showLastElement([ 3 , 4 , 10, - 5 ], 8 ));
+
+// Task 8
+
+function startFromCapital(input){
+    return input
+        .split(" ")
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+}
+let input = prompt("Enter any sentence");
+alert(startFromCapital(input));
+
+
