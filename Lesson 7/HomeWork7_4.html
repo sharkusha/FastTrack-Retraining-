@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 4</title>
+</head>
+<body>
+
+  <select id="mySelect" size="5">
+    <option>Peter</option>
+    <option>John</option>
+    <option>Alise</option>
+    <option>Alex</option>
+    <option>Iren</option>
+  </select>
+  <br><br>
+  <button id="deleteBtn">Choose and Delete</button>
+
+  <script>
+    const select = document.getElementById('mySelect');
+    const btn = document.getElementById('deleteBtn');
+
+    btn.addEventListener('click', () => {
+      const selectedIndex = select.selectedIndex;
+      if (selectedIndex !== -1) {
+        select.remove(selectedIndex);
+      } else {
+        alert('Please select an item to delete.');
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 2</title>
+</head>
+<body>
+  <p id="text">I learn JavaScript events!</p>
+  <div>
+    <button onclick="changeCSS()">Change style!</button>
+  </div>
+
+  <script>
+    function changeCSS() {
+      const p = document.getElementById('text');
+      p.style.color = 'orange';
+      p.style.fontSize = '20px';
+      p.style.fontFamily = '"Comic Sans MS", cursive, sans-serif';
+    }
+  </script>
+</body>
+</html>
