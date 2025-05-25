@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My HTML document 6_6</title>
+</head>
+
+<body>
+    <input type="text" id="input1" value="Text1">
+    <input type="text" id="input2" value="Text2">
+</body>
+<script>
+    const msg1 = prompt("Enter your first message:");
+    const msg2 = prompt("Enter your second message:");
+
+    const input1 = document.getElementById('input1');
+    const input2 = document.getElementById('input2');
+
+    input1.value = msg1;
+    input2.value = msg2;
+
+    const temp = input1.value;
+    input1.value = input2.value;
+    input2.value = temp;
+  </script>
+</body>

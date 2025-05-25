@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My HTML document 6_5</title>
+</head>
+<body>
+  <h1>I'm a big header!!!</h1>
+
+  <div id="myDiv">
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+    <p>Third paragraph</p>
+    <p>Fourth paragraph</p>
+  </div>
+
+  <ul id="myList">
+    <li>Make</li>
+    <li>me</li>
+    <li> horizontal !</li>
+  </ul>
+
+  <span>Make me invisible, please!</span>
+
+  <script>
+    const header = document.querySelector('h1');
+    header.style.backgroundColor = '#90ee91';
+
+    const paragraphOne = document.querySelector('#myDiv p');
+    paragraphOne.style.fontWeight ='bold';
+
+    const div = document.getElementById('myDiv');
+    const paragraphTwo = div.getElementsByTagName('p')[1];
+    paragraphTwo.style.color = 'red';
+
+    const paragraphThree = div.getElementsByTagName('p')[2];
+    paragraphThree.style.textDecorationLine = 'underline';
+
+    const paragraphFour = div.getElementsByTagName('p')[3];
+    paragraphFour.style.fontStyle = 'italic';
+
+    const list = document.getElementById('myList');
+    list.style.display = 'flex';
+    list.style.listStyle = 'none';
+    list.style.padding = '0';
+    list.style.margin = '0';
+
+    const items = list.querySelectorAll('li');
+    let combinedText = '';
+    items.forEach(item => {
+      combinedText += item.textContent.replace(/\s+/g, '');
+    });
+
+    const spans = document.getElementsByTagName('span');
+    spans[0].style.visibility = 'hidden'; 
+  </script>
+</body>
+</html>

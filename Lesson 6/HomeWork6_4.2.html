@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>List Order - Way 2</title>
+</head>
+<body>
+
+  <ul id="list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </ul>
+
+  <script>
+    const [first, second, third, fourth, fifth] = document.querySelectorAll('#list li');
+    const orderedItems = [first, fifth, second, fourth, third];
+    orderedItems.forEach(item => {
+      alert(item.textContent);
+    });
+  </script>
+
+</body>
+</html>

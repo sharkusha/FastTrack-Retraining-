@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>List Order - Way 1</title>
+</head>
+<body>
+
+  <ul id="list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </ul>
+
+  <script>
+    const items = document.querySelectorAll('#list li');
+    alert(items[0].textContent);
+    alert(items[4].textContent); 
+    alert(items[1].textContent); 
+    alert(items[3].textContent);
+    alert(items[2].textContent);
+  </script>
+
+</body>
+</html>
